@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- internel css kullanımı / head etiketleri arasına yazılıyor -->
+    <!-- <style> -->
+    <!-- /* tüm h1 lere uygular */ -->
+    <!-- h1{
+            color: chartreuse;
+        } -->
+    <!-- </style> -->
+    <!-- external CSS dosyamızı asagıdaki satır ile html dosyamıza atıyoruz & tanımlıyoruz -->
+    <link rel="stylesheet" href="/2.CSS/style.css" />
+  </head>
+  <body>
+    <!-- inline css kullanımı / önerilmiyor -->
+    <!-- <h1>Frontend</h1>
+    <h1>Backend</h1> -->
+
+    <!--  İD VE CLASS A GEÇİYORUZ -->
+    <!-- id, etiketlerin arasından bir tanesini seçmek için kullanıyoruz. tek bir ıd ismi kullanılır.  -->
+
+    <!--  Class ise istediğimiz kadar fazla etikete atayabiliyoruz. -->
+
+    <!-- <h1 class="title">Frontend</h1>
+    <h1>Backend</h1>
+    <p class="title">AQUA CLASS DENEME</p>
+
+    <h1 id="backend">id kullanımı denemesi</h1> -->
+<!-- Gruop Selecter konusu -->
+    <!-- <h1>Frontend</h1>
+    <p>Css Eğitimi</p>
+    <h2>Angular</h2>
+    <h3>FlexBox</h3> -->
+
+
+    <!-- border konusuna geçiyoruz -->
+    <!-- <p style="border:1px solid red;">Frontend</p> -->
+    <!-- ilk verdiğimiz kalınlığın ikinci verdiğimiz tipi üçüncü verdiğimiz rengi / bunları ayrı ayrı da verebilirisinz -->
+
+    <!-- border radious / kenarları yuvarlamak için kullanılır -->
+    <!-- <p style="border: 2px solid blue; border-radius: 30%;">Border radious</p> -->
+    <!-- sorunsuz bir avatar (daire) resmi border-radius 50% ile halledilir. -->
+    <!-- Border stilleri asagıdaki gibidir -->
+    <!-- <h1>Border stilleri</h1>
+    <p class="dotted">Dotted border</p>
+    <p class="dashed">Dashed border</p>
+    <p class="solid">Solid border</p>
+    <p class="double">Double border</p>
+    <p class="groove">Groove border</p>
+    <p class="ridge">Ridge border</p>
+    <p class="inset">İnset border</p>
+    <p class="outset">Outset border</p>
+    <p class="none">None border</p>
+    <p class="hidden">Hidden border</p>
+    <p class="mix">Mix border</p> -->
+    <!-- MARGİN & PADDİNG konusuna geçiyoruz -->
+
+        <!-- <p style="margin:50px 0px 0px 20px;">Frontend</p> -->
+        <!-- content ile border arasını padding ile açtık -->
+        <!-- <p style="border:1px solid red ; padding:15px ;">Backend</p> -->
+        <!-- ikili yazım tarzı padding -->
+        <!-- <p style="border:1px solid red ; padding:50px 20px  ;">Backend</p> -->
+        <!-- dörtlü yazım tarzı padding -->
+        <!-- <p style="border:1px solid red ; padding:50px 15px 40px 10px   ;">Backend</p> -->
+        <!-- <p class="frt">External CSS ile Border Padding</p> -->
+
+        <!-- flex direction konusuna geçiyoruz -->
+<!-- <div style="display: flex ; justify-content: center; align-items: center;height: 800px;"> -->
+    <div style="display:flex; justify-content:center ; ">
+    <div style="border:1px solid red ;  border-radius:30px;width: 350px; height: 300px; margin-right: 30px;">
+        <p style="padding:0px 0px 0px 10px; overflow: hidden;text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorem perspiciatis illum dignissimos sit sint harum amet aspernatur doloremque aut excepturi aliquam corrupti in, nihil praesentium, provident placeat, nisi quasi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorem perspiciatis illum dignissimos sit sint harum amet aspernatur doloremque aut excepturi aliquam corrupti in, nihil praesentium, provident placeat, nisi quasi.
+            Lorem ipsum dolor, sitLorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorem perspiciatis illum dignissimos sit sint harum amet aspernatur doloremque aut excepturi aliquam corrupti in, nihil praesentium, provident placeat, nisi quasi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorem perspiciatis illum dignissimos sit sint harum amet aspernatur doloremque aut excepturi aliquam corrupti in, nihil praesentium, provident placeat, nisi quasi. amet consectetur adipisicing elit. Quam dolorem perspiciatis illum dignissimos sit sint harum amet aspernatur doloremque aut excepturi aliquam corrupti in, nihil praesentium, provident placeat, nisi quasi.</p>
+    </div>
+    <div style="border:1px solid red ;  border-radius:30px;width: 350px; height: 300px;margin-right: 30px ">
+        <p style="padding:0px 0px 0px 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorem perspiciatis illum dignissimos sit sint harum amet aspernatur doloremque aut excepturi aliquam corrupti in, nihil praesentium, provident placeat, nisi quasi.</p>
+    </div>
+    <div style="border:1px solid red ;  border-radius:30px;width: 350px; height: 300px; margin-right: 30px">
+        <p style="padding:0px 0px 0px 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorem perspiciatis illum dignissimos sit sint harum amet aspernatur doloremque aut excepturi aliquam corrupti in, nihil praesentium, provident placeat, nisi quasi.</p>
+    </div>
+</div>
+<div style="display:flex; justify-content:center ; ">
+    <div style="border:1px solid red ;  border-radius:30px;width: 350px; height: 300px; margin-top: 30px;margin-right: 30px;">
+        <p style="padding:0px 0px 0px 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorem perspiciatis illum dignissimos sit sint harum amet aspernatur doloremque aut excepturi aliquam corrupti in, nihil praesentium, provident placeat, nisi quasi.</p>
+    </div>
+    <div style="border:1px solid red ;  border-radius:30px;width: 350px; height: 300px;margin-top: 30px;margin-right: 30px; ">
+        <p style="padding:0px 0px 0px 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorem perspiciatis illum dignissimos sit sint harum amet aspernatur doloremque aut excepturi aliquam corrupti in, nihil praesentium, provident placeat, nisi quasi.</p>
+    </div>
+    <div style="border:1px solid red ;  border-radius:30px;width: 350px; height: 300px; margin-top: 30px;margin-right: 30px;">
+        <p style="padding:0px 0px 0px 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolorem perspiciatis illum dignissimos sit sint harum amet aspernatur doloremque aut excepturi aliquam corrupti in, nihil praesentium, provident placeat, nisi quasi.</p>
+    </div>
+</div>
+
+<!-- </div> -->
+        
+        <button>Kaydet</button>
+        <button>İptal Et</button>
+  </body>
+</html>

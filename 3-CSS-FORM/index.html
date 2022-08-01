@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 8px 0px;
+        /* with e dahil edilmeyip  scroll çıkmasını engeller box sizing */
+        box-sizing: border-box;
+      }
+      input[type="text"]:focus {
+        background-color: darkorange;
+      }
+      input[type="text"]:hover {
+        background-color: gold;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 13px;
+        background-color: aquamarine;
+        color: firebrick;
+        border: none;
+        border-radius: 15px;
+      }
+      .formgeneral {
+        background-color: darkgrey;
+        padding: 20px;
+        margin: 10px 350px;
+      }
+      .formElement{
+        width: 100% ;
+        padding: 10px;
+        border-radius: 10px;
+        margin:8px 0px  ;
+        box-sizing: border-box ;
+        border: 1px solid red;
+      }
+      .formSubmit{
+        width:100% ;
+        padding:13px ;
+        background-color:lightgreen ;
+        border: none;
+        color: white;
+      }
+      .formElement:focus{
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- forma style ile arka plan padding ve margin verdik -->
+    <form class="formgeneral">
+      <label>Ad</label>
+      <input type="text" class="fromElement" name="firstName" id="" placeholder="Adınızı giriniz" />
+      <label>Soyad</label>
+      <input
+        type="text"
+        name="LastName"
+        id=""
+        class="fromElement"
+        placeholder="Soyadınızı giriniz"
+      />
+      <select name="Countrys" class="formElement">
+        <label>Countrys</label>
+        <option value="tr">Türkiye</option>
+        <option value="fr">France</option>
+        <option value="eng">England</option>
+      </select>
+      <input type="submit" value="Kaydet" />
+    </form>
+  </body>
+</html>

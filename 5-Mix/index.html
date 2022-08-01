@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 8px 0px;
+        /* with e dahil edilmeyip  scroll çıkmasını engeller box sizing */
+        box-sizing: border-box;
+      }
+      input[type="text"]:focus {
+        background-color: darkorange;
+      }
+      input[type="text"]:hover {
+        background-color: gold;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 13px;
+        background-color: aquamarine;
+        color: firebrick;
+        border: none;
+        border-radius: 15px;
+      }
+        .imgMainDiv{
+            display: flex;
+            justify-content: center;
+            margin: 30px 0px;
+            
+            
+    }
+
+        .imgDiv{
+            border: 1px solid black;
+             width: 200px;
+              border-radius: 30px;
+              margin-right: 30px ;
+        }
+        /*  imgdiv in içindeki etiketlere ayrı ayrı css vermek için asagıdaki kullanımı uyguluyoruz */
+        .imgDiv img{
+            border-radius: 30px 30px 0px 0px ;
+            width: 100%;
+            
+        }
+        .imgDiv h3{
+            text-align: center;
+        }
+        .imgDiv p{
+        padding:0px 20px 
+        }
+        .formgeneral {
+        background-color: darkgrey;
+        padding: 20px;
+        margin: 10px 350px;
+      }
+      .formElement{
+        width: 100% ;
+        padding: 10px;
+        border-radius: 10px;
+        margin:8px 0px  ;
+        box-sizing: border-box ;
+        border: 1px solid red;
+      }
+      .formSubmit{
+        width:100% ;
+        padding:13px ;
+        background-color:lightgreen ;
+        border: none;
+        color: white;
+      }
+      .formElement:focus{
+        background-color: lightgreen;
+      }
+      .header{
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        background-color: pink;
+        align-items: center;
+        padding: 8px 15px;
+      }
+      .headerLink{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        margin-right: 13px;
+      }
+
+      .footer{
+        display: flex;
+        /* width olarak ortalamak için justify-content:center; */
+        justify-content:center;
+        height: 70px;
+        background-color:orange;
+        /* dikey  olarak ortalamak için align-items: center; */
+        align-items: center;
+        padding: 8px 15px;
+        color: white;
+        margin-top: 20px;
+      }
+      /* mobilde geçerli olucak kodları asagıda uyguluyor ve eziyoruz. */
+      @media only screen and (max-width: 600px) {
+        .imgMainDiv{
+            flex-direction: column;
+            
+            
+    }
+    .imgDiv{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .formgeneral {
+        
+        margin:0px;
+      }
+            
+    }
+
+
+      
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="1.jpg" width="40px" style="border-radius: 5px;">
+        </div>
+        <div>
+            <a class="headerLink" href="">Home</a>
+            <a class="headerLink" href="">About</a>
+            <a class="headerLink" href="">Contact</a>
+
+        </div>
+    </div>
+    <!-- bazı yorum satırları incline css içerebilir -->
+    <!-- position ile bannera yön veriyoruz -->
+    <div style="background-image: url(banner.jpg) ; height: 400px;position: relative;"> 
+        <!-- parentina  / kapsayıcı div e / position relative diyoruz -->
+        <!-- hizamalak istediğimize position absolute diyoruz -->
+        <div style="position: absolute; top: 70px; left: 0; right: 0; bottom: 27px; text-align: center;">
+            <!-- left0 right 0 yaparsan / margin oto gibi olur -->
+            <!-- absolute -top -left-right-bottom ile hizalama yapılabilir. belirtilen köşelerden uzaklık değerleri veriliyor -->
+            <h3>Efsane Banner</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo corrupti alias iste facilis delectus, suscipit ab ut, veritatis ducimus cupiditate doloremque fugiat harum quae omnis quam dicta autem praesentium obcaecati?</p>
+        </div>
+    </div>
+
+    <!-- Card / kart yapısına geçiyoruz -->
+    <div class="imgMainDiv" "> 
+    <div class="imgDiv">
+    <!-- <div style="border: 1px solid black; width: 200px; border-radius: 30px; "> -->
+        <!-- kapsadığı div'e göre width vermek için  img ye width 100% verdik -->
+        <!-- <img src="1.jpg" style="width:100% ; border-radius: 30px 30px 0px 0px;" > -->
+        <img src="1.jpg">
+        <h3>Efso Başlık</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda maiores sequi voluptatum rerum architecto id eaque facilis vero, at similique impedit quibusdam, beatae fugit mollitia modi. Dolore, repellat dolores.
+            
+        </p>
+    </div>
+    <div class="imgDiv">
+        <!-- <div style="border: 1px solid black; width: 200px; border-radius: 30px; "> -->
+            <!-- kapsadığı div'e göre width vermek için  img ye width 100% verdik -->
+            <!-- <img src="1.jpg" style="width:100% ; border-radius: 30px 30px 0px 0px;" > -->
+            <img src="2.jpg">
+            <h3>Efso Başlık</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda maiores sequi voluptatum rerum architecto id eaque facilis vero, at similique impedit quibusdam, beatae fugit mollitia modi. Dolore, repellat dolores.
+                
+            </p>
+        </div>
+        <div class="imgDiv">
+            <!-- <div style="border: 1px solid black; width: 200px; border-radius: 30px; "> -->
+                <!-- kapsadığı div'e göre width vermek için  img ye width 100% verdik -->
+                <!-- <img src="1.jpg" style="width:100% ; border-radius: 30px 30px 0px 0px;" > -->
+                <img src="3.jpg">
+                <h3>Efso Başlık</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda maiores sequi voluptatum rerum architecto id eaque facilis vero, at similique impedit quibusdam, beatae fugit mollitia modi. Dolore, repellat dolores.
+                    
+                </p>
+            </div>
+            
+            <div class="imgDiv">
+                <!-- <div style="border: 1px solid black; width: 200px; border-radius: 30px; "> -->
+                    <!-- kapsadığı div'e göre width vermek için  img ye width 100% verdik -->
+                    <!-- <img src="1.jpg" style="width:100% ; border-radius: 30px 30px 0px 0px;" > -->
+                    <img src="4.jpg">
+                    <h3>Efso Başlık</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda maiores sequi voluptatum rerum architecto id eaque facilis vero, at similique impedit quibusdam, beatae fugit mollitia modi. Dolore, repellat dolores.
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form class="formgeneral">
+        <label>Ad</label>
+        <input type="text" class="fromElement" name="firstName" id="" placeholder="Adınızı giriniz" />
+        <label>Soyad</label>
+        <input
+          type="text"
+          name="LastName"
+          id=""
+          class="fromElement"
+          placeholder="Soyadınızı giriniz"
+        />
+        <select name="Countrys" class="formElement">
+          <label>Countrys</label>
+          <option value="tr">Türkiye</option>
+          <option value="fr">France</option>
+          <option value="eng">England</option>
+        </select>
+        <input type="submit" value="Kaydet" />
+      </form>
+
+      <div class="footer">
+        
+        <div>
+        </div>
+        <div>
+            <h3>Frontend&&All Rights Reserved 2022 |MGF</h3>
+
+        </div>
+    </div>
+
+
+    <!-- </div> -->
+</body>
+</html>
